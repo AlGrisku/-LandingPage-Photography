@@ -1,0 +1,52 @@
+/*
+    Start Color Palette
+*/
+
+:root
+{
+    --darkBlue: #474554;
+    --lightBrown: #8F706D;
+    --gray: #787586;
+    --black: #000;
+    --white: #fff;
+}
+
+/*
+    End Color Palette
+*/
+
+/*
+    Start Formatting for all document
+*/
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: auto;
+    max-width: 100%;
+}
+
+/*
+    End Formatting for all document
+*/

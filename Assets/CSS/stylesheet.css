@@ -38,6 +38,18 @@ a
     text-decoration: none;
 }
 
+h1,
+h2,
+h3
+{
+    font-family: 'Fahkwang', sans-serif;
+}
+
+p
+{
+    font-family: 'Tenor Sans', sans-serif;
+}
+
 .container
 {
     display: flex;
@@ -49,4 +61,253 @@ a
 
 /*
     End Formatting for all document
+*/
+
+/*
+    Start Header Section
+*/
+
+#header .header
+{
+    background-color: var(--darkBlue);
+    min-height: 100vh;
+    align-items: flex-start;
+    position: relative;
+}
+
+#header .wrapper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    row-gap: 40px;
+}
+
+#header .wrapper .header-img-container
+{
+    width: 100%;
+    height: 65vh;
+}
+
+#header .wrapper .header-name
+{
+    width: 100%;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+#header .pro-pho
+{
+    position: absolute;
+    bottom: 10%;
+    font-size: 1.6rem;
+    color: var(--lightBrown);
+}
+
+#header .pro-pho p
+{
+    position: relative;
+}
+#header .pro-pho p::before
+{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    left: -25px;
+    top: -2px;
+    border-color: var(--lightBrown);
+    border-width: 2px 0 2px 2px;
+    border-style: solid;
+}
+#header .pro-pho p::after
+{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    right: -25px;
+    top: -2px;
+    border-color: var(--lightBrown);
+    border-width: 2px 2px 2px 0;
+    border-style: solid;
+}
+
+#header .deco-left-long
+{
+    position: absolute;
+    height: 47vh;
+    width: 2px;
+    background-color: var(--lightBrown);
+    top: 30%;
+    left: 5%;
+}
+#header .deco-left-short
+{
+    position: absolute;
+    height: 2px;
+    width: 10%;
+    background-color: var(--lightBrown);
+    top: 77%;
+    left: 5%;
+}
+
+#header .deco-right-long
+{
+    position: absolute;
+    height: 47vh;
+    width: 2px;
+    background-color: var(--lightBrown);
+    top: 30%;
+    right: 5%;
+}
+#header .deco-right-short
+{
+    position: absolute;
+    height: 2px;
+    width: 10%;
+    background-color: var(--lightBrown);
+    top: 77%;
+    right: 5%;
+}
+
+/*
+    End Header Section
+*/
+
+/* 
+    Start Media Query for Tablet 
+*/
+
+@media only screen and (min-width: 768px)
+{
+
+    /*
+        Start Header Tablet
+    */
+
+    #header .header
+    {
+        min-height: 85vh;
+    }
+
+    #header .wrapper
+    {
+        width: 80%;
+        row-gap: 40px;
+    }
+
+    #header .wrapper .header-name
+    {
+        font-size: 1.8rem;
+    }
+
+    #header .pro-pho
+    {
+        bottom: 5%;
+        right: 8%;
+        font-size: 2rem;
+    }
+
+    #header .deco-left-long
+    {
+        width: 4px;
+    }
+    #header .deco-left-short
+    {
+        height: 4px;
+        width: 8%;
+        top: 85%;
+    }
+
+    #header .deco-right-long
+    {
+        width: 4px;
+    }
+    #header .deco-right-short
+    {
+        height: 4px;
+        width: 8%;
+        top: 85%;
+    }
+
+    /*
+        End Header Tablet
+    */
+
+}
+
+/* 
+    End Media Query for Tablet 
+*/
+
+/* 
+    Start Media Query for Desktop 
+*/
+
+@media only screen and (min-width: 1200px)
+{
+
+    /*
+        Start Header Desktop
+    */
+
+    #header .header
+    {
+        min-height: 100vh;
+    }
+
+    #header .wrapper
+    {
+        row-gap: 20px;
+    }
+
+    #header .wrapper .header-img-container
+    {
+        height: 75vh;
+    }
+
+    #header .wrapper .header-name
+    {
+        font-size: 2.3rem;
+        letter-spacing: 2px;
+    }
+
+    #header .pro-pho
+    {
+        right: 6.5%;
+        bottom: 4%;
+    }
+
+    #header .deco-left-long
+    {
+        height: 55vh;
+    }
+    #header .deco-left-short
+    {
+        width: 15%;
+    }
+
+    #header .deco-right-long
+    {
+        height: 55vh;
+    }
+    #header .deco-right-short
+    {
+        width: 15%;
+    }
+
+    /*
+        End Header Desktop
+    */
+
+}
+
+/* 
+    End Media Query for Desktop 
 */

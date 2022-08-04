@@ -363,6 +363,167 @@ p
     End About Section
 */
 
+/*
+    Start Services Section
+*/
+
+#services .services
+{
+    flex-direction: column;
+}
+
+#services h1
+{
+    font-size: 2.5rem;
+    margin: 80px 0  80px 0;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+#services .services-wrapper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    row-gap: 30px;
+    margin-bottom: 80px;
+}
+
+#services .services-wrapper .left-column
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    row-gap: 50px;
+    flex-wrap: wrap;
+}
+
+#services .left-column .service-card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-basis: 100%;
+    width: 100%;
+    min-height: 35vh;
+    position: relative;
+}
+#services .left-column .service-card::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8vh;
+    border-width: 3px 3px 0 3px;
+    border-style: solid;
+    border-color: var(--darkBlue);
+}
+#services .left-column .service-card::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 8vh;
+    border-width: 0 3px 3px 3px;
+    border-style: solid;
+    border-color: var(--darkBlue);
+}
+
+#services .left-column .service-card .icon-wrapper
+{
+    width: 110px;
+    height: 110px;
+}
+
+#services .left-column .service-card h2
+{
+    font-size: 2rem;
+    color: var(--darkBlue);
+}
+
+#services .services-wrapper .middle-column
+{
+    width: 100%;
+    height: 80vh;
+}
+
+#services .middle-column img
+{
+    border-radius: 60px;
+}
+
+#services .services-wrapper .right-column
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    row-gap: 50px;
+    flex-wrap: wrap;
+}
+
+#services .right-column .service-card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-basis: 100%;
+    width: 100%;
+    min-height: 35vh;
+    position: relative;
+}
+#services .right-column .service-card::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8vh;
+    border-width: 3px 3px 0 3px;
+    border-style: solid;
+    border-color: var(--darkBlue);
+}
+#services .right-column .service-card::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 8vh;
+    border-width: 0 3px 3px 3px;
+    border-style: solid;
+    border-color: var(--darkBlue);
+}
+
+#services .right-column .service-card .icon-wrapper
+{
+    width: 110px;
+    height: 110px;
+}
+
+#services .right-column .service-card h2
+{
+    font-size: 2rem;
+    color: var(--darkBlue);
+}
+
+/*
+    End Services Section
+*/
+
 /* 
     Start Media Query for Tablet 
 */
@@ -515,6 +676,87 @@ p
 
     /*
         End About Tablet
+    */
+
+    /*
+        Start Services Tablet
+    */
+
+    #services h1
+    {
+        font-size: 3.5rem;
+        letter-spacing: 0.2rem;
+    }
+
+    #services .services-wrapper .left-column
+    {
+        flex-direction: row;
+        column-gap: 50px;
+    }
+
+    #services .left-column .service-card
+    {
+        flex-basis: 45%;
+        min-height: 30vh;
+    }
+    #services .left-column .service-card::before
+    {
+        height: 5vh;
+    }
+    #services .left-column .service-card::after
+    {
+        height: 5vh;
+    }
+
+    #services .left-column .service-card .icon-wrapper
+    {
+        width: 130px;
+        height: 130px;
+    }
+
+    #services .left-column .service-card h2
+    {
+        font-size: 2.2rem;
+    }
+
+    #services .services-wrapper .middle-column
+    {
+        width: 70%;
+    }
+
+    #services .services-wrapper .right-column
+    {
+        flex-direction: row;
+        column-gap: 50px;
+    }
+
+    #services .right-column .service-card
+    {
+        flex-basis: 45%;
+        min-height: 30vh;
+    }
+    #services .right-column .service-card::before
+    {
+        height: 5vh;
+    }
+    #services .right-column .service-card::after
+    {
+        height: 5vh;
+    }
+
+    #services .right-column .service-card .icon-wrapper
+    {
+        width: 130px;
+        height: 130px;
+    }
+
+    #services .right-column .service-card h2
+    {
+        font-size: 2.2rem;
+    }
+
+    /*
+        End Services Tablet
     */
 
 }
@@ -695,6 +937,91 @@ p
 
     /*
         End About Desktop
+    */
+
+    /*
+        Start Services Desktop
+    */
+
+    #services .services-wrapper
+    {
+        flex-direction: row;
+        width: 80%;
+        column-gap: 50px;
+    }
+
+    #services .services-wrapper .left-column
+    {
+        flex-direction: column;
+        width: 30%;
+        row-gap: 80px;
+    }
+
+    #services .left-column .service-card
+    {
+        flex-basis: 100%;
+        min-height: 40vh;
+    }
+    #services .left-column .service-card::before
+    {
+        height: 7vh;
+    }
+    #services .left-column .service-card::after
+    {
+        height: 7vh;
+    }
+
+    #services .left-column .service-card:nth-child(2)
+    {
+        transform: translateX(-30%);
+    }
+
+    #services .left-column .service-card .icon-wrapper
+    {
+        width: 110px;
+        height: 110px;
+    }
+
+    #services .services-wrapper .middle-column
+    {
+        width: 33%;
+        height: 143vh;
+    }
+
+    #services .services-wrapper .right-column
+    {
+        flex-direction: column;
+        width: 30%;
+        row-gap: 90px;
+    }
+
+    #services .right-column .service-card
+    {
+        flex-basis: 100%;
+        min-height: 40vh;
+    }
+    #services .right-column .service-card::before
+    {
+        height: 7vh;
+    }
+    #services .right-column .service-card::after
+    {
+        height: 7vh;
+    }
+
+    #services .right-column .service-card:nth-child(2)
+    {
+        transform: translateX(30%);
+    }
+
+    #services .right-column .service-card .icon-wrapper
+    {
+        width: 110px;
+        height: 110px;
+    }
+
+    /*
+        End Services Desktop
     */
 
 }

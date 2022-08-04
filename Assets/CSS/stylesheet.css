@@ -180,6 +180,189 @@ p
     End Header Section
 */
 
+/*
+    Start About Section
+*/
+
+#about .wrapper-sections
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#about .wrapper-sections .left-section
+{
+    width: 100%;
+    height: 400px;
+}
+
+#about .wrapper-sections .right-section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-top: 4px solid var(--white);
+}
+
+#about .right-section .section-1
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+    background-color: var(--gray);
+    border-bottom: 4px solid var(--white);
+}
+
+#about .section-1 .wrapper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    row-gap: 20px;
+}
+
+#about .section-1 .wrapper .text-box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    row-gap: 10px;
+}
+
+#about .section-1 .wrapper .text-box h2
+{
+    font-size: 2.5rem;
+}
+
+#about .section-1 .wrapper .text-box p
+{
+    font-size: 1.4rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+#about .section-1 .wrapper .deco
+{
+    width: 40%;
+    height: 150px;
+    position: relative;
+    display: block;
+}
+#about .section-1 .wrapper .deco::before
+{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    border-width: 2px 2px 0 2px;
+    border-style: solid;
+    border-color: var(--white);
+}
+#about .section-1 .wrapper .deco::after
+{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    border-width: 0 2px 2px 2px;
+    border-style: solid;
+    border-color: var(--white);
+}
+
+#about .right-section .section-2
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+    background-color: var(--lightBrown);
+}
+
+#about .section-2 .wrapper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    row-gap: 20px;
+}
+
+#about .section-2 .wrapper .text-box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    row-gap: 10px;
+}
+
+#about .section-2 .wrapper .text-box h2
+{
+    
+    font-size: 2.5rem;
+}
+
+#about .section-2 .wrapper .text-box p
+{
+    font-size: 1.4rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+#about .section-2 .wrapper .deco
+{
+    width: 40%;
+    height: 150px;
+    position: relative;
+    display: block;
+}
+#about .section-2 .wrapper .deco::before
+{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 20px;
+    border-width: 2px 0 2px 2px;
+    border-style: solid;
+    border-color: var(--white);
+}
+#about .section-2 .wrapper .deco::after
+{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 20px;
+    border-width: 2px 2px 2px 0;
+    border-style: solid;
+    border-color: var(--white);
+}
+
+/*
+    End About Section
+*/
+
 /* 
     Start Media Query for Tablet 
 */
@@ -238,6 +421,100 @@ p
 
     /*
         End Header Tablet
+    */
+
+    /*
+        Start About Tablet
+    */
+
+    #about .wrapper-sections .left-section
+    {
+        width: 100%;
+        height: 700px;
+    }
+
+    #about .wrapper-sections .right-section
+    {
+        flex-direction: row;
+    }
+
+    #about .right-section .section-1
+    {
+        width: 50%;
+        height: 45vh;
+        border-bottom: none;
+        border-right: 4px solid var(--white);
+    }
+
+    #about .section-1 .wrapper
+    {
+        width: 90%;
+        row-gap: 30px;
+    }
+
+    #about .section-1 .wrapper .text-box h2
+    {
+        font-size: 3rem;
+    }
+
+    #about .section-1 .wrapper .text-box p
+    {
+        font-size: 1.7rem;
+    }
+
+    #about .section-1 .wrapper .deco
+    {
+        width: 50%;
+        height: 200px;
+    }
+    #about .section-1 .wrapper .deco::before
+    {
+        
+        border-width: 4px 4px 0 4px;
+    }
+    #about .section-1 .wrapper .deco::after
+    {
+        border-width: 0 4px 4px 4px;
+    }
+
+    #about .right-section .section-2
+    {
+        width: 50%;
+        height: 45vh;
+    }
+
+    #about .section-2 .wrapper
+    {
+        width: 90%;
+        row-gap: 30px;
+    }
+
+    #about .section-2 .wrapper .text-box h2
+    {
+        font-size: 3rem;
+    }
+
+    #about .section-2 .wrapper .text-box p
+    {
+        font-size: 1.7rem;
+    }
+
+    #about .section-2 .wrapper .deco
+    {
+        width: 50%;
+        height: 200px;
+    }
+    #about .section-2 .wrapper .deco::before
+    {
+        border-width: 4px 0 4px 4px;
+    }
+    #about .section-2 .wrapper .deco::after
+    {
+        border-width: 4px 4px 4px 0;
+    }
+
+    /*
+        End About Tablet
     */
 
 }
@@ -304,6 +581,120 @@ p
 
     /*
         End Header Desktop
+    */
+
+    /*
+        Start About Desktop
+    */
+
+    #about .about
+    {
+        min-height: 100vh;
+    }
+
+    #about .wrapper-sections
+    {
+        flex-direction: row;
+    }
+
+    #about .wrapper-sections .left-section
+    {
+        width: 50%;
+        min-height: 100vh;
+    }
+
+    #about .wrapper-sections .right-section
+    {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        border-top: none;
+        border-left: 4px solid var(--white);
+    }
+
+    #about .right-section .section-1
+    {
+        width: 100%;
+        height: 50vh;
+        border-right: none;
+        border-bottom: 4px solid var(--white);
+    }
+
+    #about .section-1 .wrapper
+    {
+        flex-direction: row;
+        width: 80%;
+        row-gap: none;
+    }
+
+    #about .section-1 .wrapper .text-box
+    {
+        display: flex;
+        align-items: flex-start;
+        row-gap: 10px;
+        width: 80%;
+    }
+
+    #about .section-1 .wrapper .text-box h2
+    {
+        font-size: 3rem;
+    }
+    
+    #about .section-1 .wrapper .text-box p
+    {
+        font-size: 1.6rem;
+        text-align: left;
+        width: 80%;
+    }
+
+    #about .section-1 .wrapper .deco
+    {
+        width: 30%;
+        height: 200px;
+    }
+
+    #about .right-section .section-2
+    {
+        width: 100%;
+        height: 50vh;
+        border-right: none;
+    }
+
+    #about .section-2 .wrapper
+    {
+        flex-direction: row-reverse;
+        width: 80%;
+        row-gap: none;
+    }
+
+    #about .section-2 .wrapper .text-box
+    {
+        display: flex;
+        align-items: flex-end;
+        row-gap: 10px;
+        width: 80%;
+    }
+
+    #about .section-2 .wrapper .text-box h2
+    {
+        font-size: 3rem;
+    }
+    
+    #about .section-2 .wrapper .text-box p
+    {
+        font-size: 1.6rem;
+        text-align: right;
+        width: 80%;
+    }
+
+    #about .section-2 .wrapper .deco
+    {
+        width: 30%;
+        height: 200px;
+    }
+
+    /*
+        End About Desktop
     */
 
 }

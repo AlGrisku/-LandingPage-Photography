@@ -524,6 +524,111 @@ p
     End Services Section
 */
 
+/*
+    Start Portfolio Section
+*/
+
+#portfolio .portfolio
+{
+    flex-direction: column;
+    background-color: var(--lightBrown);
+}
+
+#portfolio h1
+{
+    font-size: 2.5rem;
+    margin: 80px 0  80px 0;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+#portfolio .portfolio-wrapper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    position: relative;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+#portfolio .portfolio-wrapper .img-container
+{
+    width: 100%;
+    height: 350px;
+    position: relative;
+    transform: scale(0.5);
+    filter: grayscale(100%);
+    transition: 0.3s ease;
+    position: relative;
+}
+#portfolio .portfolio-wrapper .img-container:hover::before
+{
+    opacity: 0;
+}
+
+#portfolio .portfolio-wrapper .img-container:hover
+{
+    transform: scale(1);
+    filter: grayscale(0%);
+}
+
+#portfolio .portfolio-wrapper .img-container img
+{
+    border-radius: 50%;
+    transition: 0.3s ease;
+    filter: blur(0.2rem);
+}
+
+#portfolio .portfolio-wrapper .img-container:hover img
+{
+    border-radius: 0%;
+    filter: blur(0);
+}
+
+#portfolio .portfolio-wrapper .deco1,
+#portfolio .portfolio-wrapper .deco2,
+#portfolio .portfolio-wrapper .deco3,
+#portfolio .portfolio-wrapper .deco4
+{
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 40px;
+    border-style: solid;
+    border-color: var(--white);
+}
+#portfolio .portfolio-wrapper .deco1
+{
+    border-width: 3px 0 0 3px;
+    top: -30px;
+    left: -20px;
+}
+#portfolio .portfolio-wrapper .deco2
+{
+    border-width: 3px 3px 0 0;
+    top: -30px;
+    right: -20px;
+}
+#portfolio .portfolio-wrapper .deco3
+{
+    border-width: 0 0 3px 3px;
+    bottom: -30px;
+    left: -20px;
+}
+#portfolio .portfolio-wrapper .deco4
+{
+    border-width: 0 3px 3px 0;
+    bottom: -30px;
+    right: -20px;
+}
+
+/*
+    End Portfolio Section
+*/
+
 /* 
     Start Media Query for Tablet 
 */
@@ -757,6 +862,39 @@ p
 
     /*
         End Services Tablet
+    */
+
+    /*
+        Start Portfolio Tablet
+    */
+
+    #portfolio h1
+    {
+        font-size: 3.5rem;
+        letter-spacing: 0.2rem;
+    }
+
+    #portfolio .portfolio-wrapper
+    {
+        flex-direction: row;
+    }
+
+    #portfolio .portfolio-wrapper .img-container
+    {
+        width: 50%;
+    }
+
+    #portfolio .portfolio-wrapper .deco1,
+    #portfolio .portfolio-wrapper .deco2,
+    #portfolio .portfolio-wrapper .deco3,
+    #portfolio .portfolio-wrapper .deco4
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* 
+        End Protfolio Tablet
     */
 
 }
@@ -1022,6 +1160,20 @@ p
 
     /*
         End Services Desktop
+    */
+
+    /*
+        Start Portfolio Desktop
+    */
+
+    #portfolio .portfolio-wrapper .img-container
+    {
+        width: 33%;
+        height: 400px;
+    }
+
+    /*
+        End Portfolio Desktop
     */
 
 }

@@ -85,7 +85,7 @@ p
 
 #nav .nav-logo
 {
-    width: 50%;
+    width: 200px;
     z-index: 1;
     transition: 0.3s ease;
 }
@@ -95,7 +95,7 @@ p
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 50%;
+    width: 30%;
     flex-wrap: wrap;
 }
 
@@ -120,7 +120,10 @@ p
     height: 4px;
     background-color: var(--lightBrown);
     position: relative;
-    transition: transform 0.3s ease;
+    transition-property: transform;
+    transition-delay: 0;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
 /* Active Class Hamburger */
@@ -128,16 +131,28 @@ p
 #nav .nav-list .hamburger.active .bar:nth-child(2)
 {
     opacity: 0;
+    transition-property: all;
+    transition-delay: 0;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
 #nav .nav-list .hamburger.active .bar:nth-child(1)
 {
     transform: translateY(12px) rotateZ(45deg);
+    transition-property: all;
+    transition-delay: 0.3s;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
 #nav .nav-list .hamburger.active .bar:nth-child(3)
 {
     transform: translateY(-12px) rotateZ(-45deg);
+    transition-property: all;
+    transition-delay: 0.3s;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
 /* Active Class Hamburger */
@@ -156,7 +171,10 @@ p
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: 0.3s ease;
+    transition-property: all;
+    transition-delay: 0.5s;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
     overflow: hidden;
 }
 
@@ -170,12 +188,20 @@ p
     top: 0;
     border-radius: 0%;
     opacity: 1;
+    transition-property: all;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
 #nav .nav-list .nav-items.active ul,
 #nav .nav-list .nav-items.active .social-media-icons
 {
     opacity: 1;
+    transition-property: all;
+    transition-delay: 0.5s;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
 /* Active Class Mobile Menu*/
@@ -190,7 +216,10 @@ p
     width: 100%;
     transform: translateY(10%);
     opacity: 0;
-    transition: 0.5s ease;
+    transition-property: opacity;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
 #nav .nav-items ul li a
@@ -204,6 +233,7 @@ p
     font-weight: 900;
     color: var(--lightBrown);
     letter-spacing: 2px;
+    position: relative;
 }
 
 #nav .nav-items .social-media-icons
@@ -217,7 +247,10 @@ p
     transform: translateY(50%);
     background-color: var(--darkBlue);
     opacity: 0;
-    transition: 0.5s ease;
+    transition-property: opacity;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
 #nav .nav-items .social-media-icons .icon
@@ -908,17 +941,37 @@ p
     background-color: rgba(0, 0, 0, 0.8);
     color: var(--white);
     margin-top: 100%;
-    transition: 0.3s ease;
+    transition-property: all;
+    transition-delay: 0.5s;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 #packs .pack-card .img-container:hover .hover-animation
 {
     margin-top: 0;
+    transition-property: all;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
 #packs .pack-card .img-container .hover-animation h2
 {
     font-size: 2rem;
     letter-spacing: 2px;
+    opacity: 0;
+    transition-property: opacity;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+#packs .pack-card .img-container:hover .hover-animation h2
+{
+    opacity: 1;
+    transition-property: all;
+    transition-delay: 0.5s;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
 #packs .pack-card .img-container .hover-animation a
@@ -930,11 +983,25 @@ p
     border: 2px solid var(--white);
     position: relative;
     text-transform: uppercase;
-    transition: 0.3s ease;
+    transition: color 0.3s ease;
+    transition-property: opacity;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    opacity: 0;
 }
 #packs .pack-card .img-container .hover-animation a:hover
 {
     color: var(--black);
+}
+
+#packs .pack-card .img-container:hover .hover-animation a
+{
+    opacity: 1;
+    transition-property: opacity;
+    transition-delay: 0.5s;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
 #packs .pack-card .img-container .hover-animation a::before
@@ -964,7 +1031,10 @@ p
     left: 20px;
     font-size: 1.2rem;
     font-weight: 900;
-    transition: 0.3s ease;
+    transition-property: all;
+    transition-delay: 0.7s;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
 #packs .img-container .hover-me p
@@ -977,6 +1047,10 @@ p
 {
     opacity: 0;
     transform: scale(0.2);
+    transition-property: all;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
 /*
@@ -1069,7 +1143,6 @@ p
 #contact #form-button
 {
     font-size: 2rem;
-    text-transform: uppercase;
     padding: 1rem 1.5rem;
     border-radius: 20px;
     border: 3px solid var(--white);
@@ -1110,6 +1183,37 @@ p
 
 @media only screen and (min-width: 768px)
 {
+
+    /*
+        Start Nav Bar Tablet
+    */
+
+    #nav .nav
+    {
+        padding: 0 40px;
+    }
+
+    #nav .nav-items ul li a
+    {
+        padding: 2.5rem 0;
+        font-size: 3rem;
+    }
+
+    #nav .nav-items .social-media-icons
+    {
+        height: 25vh;
+        transform: translateY(40%);
+    }
+
+    #nav .nav-items .social-media-icons .icon
+    {
+        width: 80px;
+        height: 80px;
+    }
+
+    /*
+        End Nav Bar Tablet
+    */
 
     /*
         Start Header Tablet
@@ -1542,6 +1646,98 @@ p
 
 @media only screen and (min-width: 1200px)
 {
+
+    /*
+        Start Nav Bar Desktop
+    */
+
+    #nav .nav-list
+    {
+        width: 80%;
+    }
+
+    #nav .nav-list .hamburger
+    {
+        display: none;
+    }
+
+    #nav .nav-list .nav-items
+    {
+        position: initial;
+        width: 100%;
+        opacity: 1;
+        border-radius: 0%;
+        flex-direction: row;
+        background-color: transparent;
+    }
+
+    #nav .nav-list .nav-items.active
+    {
+        height: 10vh;
+    }
+
+    #nav .nav-items ul
+    {
+        opacity: 1;
+        flex-direction: row;
+        transform: translateY(0);
+        width: 80%;
+    }
+
+    #nav .nav-items ul li a
+    {
+        padding: 0.7rem 1.5rem;
+        width: auto;
+        font-size: 1.3rem;
+        color: var(--black);
+        position: relative;
+    }
+    #nav .nav-items ul li a::after
+    {
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        background-color: var(--lightBrown);
+        bottom: 0;
+        left: 0;
+        transition-property: width;
+        transition-delay: 0s;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+    }
+    #nav .nav-items ul li a:hover::after
+    {
+        width: 100%;
+    }
+
+    #nav .nav-items .social-media-icons
+    {
+        opacity: 1;
+        transform: translateY(0);
+        width: 20%;
+        background-color: transparent;
+    }
+
+    #nav .nav-items .social-media-icons .icon
+    {
+        width: 30px;
+        height: 30px;
+        filter: grayscale(100%);
+        transition-property: all;
+        transition-delay: 0s;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+    }
+    #nav .nav-items .social-media-icons .icon:hover
+    {
+        filter: grayscale(0%);
+        transform: scale(1.5);
+    }
+
+    /*
+        End Nav Bar Desktop
+    */
 
     /*
         Start Header Desktop

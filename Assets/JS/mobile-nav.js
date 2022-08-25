@@ -16,16 +16,23 @@ nav_item.forEach(item=>{
     })
 })
 
+logo.addEventListener('click', ()=>{
+    if(hamburger.classList.contains('active') && mobile_menu.classList.contains('active')) {
+        hamburger.classList.toggle('active');
+        mobile_menu.classList.toggle('active');
+    }
+})
+
 document.addEventListener('scroll', ()=>{
     var scroll_position = window.scrollY;
     
-    if(scroll_position > 200)
+    if(scroll_position > 150)
     {
         nav.style.height = '10vh';
-        logo.style.width = '35%';
+        logo.style.width = '130px';
     } else
     {
         nav.style.height = '20vh';
-        logo.style.width = '50%';
+        logo.style.width = '250px';
     }
 })
